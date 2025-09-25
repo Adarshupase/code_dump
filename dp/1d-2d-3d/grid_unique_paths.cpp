@@ -1,7 +1,13 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+/*
+    A robot is located at the top-left corner of an m × n grid (position (0,0)).
+The robot can only move either down or right at any point in time.
 
+Your task is to determine the number of unique paths the robot can take to reach the bottom-right corner
+of the grid (position (m-1, n-1)
+*/
 int f(int i, int j,vector<vector<int>>& dp)
 {
     if (i == 0 && j == 0){
@@ -58,4 +64,5 @@ int uniquePaths3(int m, int n)
         prev = temp;
     }
     return prev[n-1];
+
 }
