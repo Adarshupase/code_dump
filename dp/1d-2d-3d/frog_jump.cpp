@@ -2,6 +2,28 @@
 
 using namespace std;
 
+/* 
+Problem Statement: Frog Jump
+
+A frog is trying to cross a river by jumping on stones arranged in a line.
+The frog starts at stone 0 (index 0) and wants to reach the last stone at index n-1.
+
+You are given an array heights[] of size n, where heights[i] represents the height of the i-th stone.
+
+At each step, the frog can jump either:
+
+From stone i to stone i+1
+
+From stone i to stone i+2 (if possible)
+
+The cost of a jump from stone i to stone j is:
+
+abs(heights[i] - heights[j])
+
+
+Your task is to find the minimum total cost for the frog to reach stone n-1.
+*/ 
+
 int f(int ind, vector<int>& heights,vector<int>& dp)
 {
     if (ind == 0) return 0;
@@ -63,6 +85,7 @@ int main(){
     }
 
     // cout << frogJump(n,heights,dp) << "\n";
+
 
 
 
